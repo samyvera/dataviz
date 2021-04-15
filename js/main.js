@@ -21,8 +21,8 @@ var theta = 0;
 let img;
 let img2;
 function preload() {
-	img = loadImage('../asset/help.png');
-	img2 = loadImage('../asset/earth.jpg');
+	img = loadImage('https://files.catbox.moe/nicp0s.png');
+	img2 = loadImage('https://files.catbox.moe/41x6d3.jpg');
 }
 
 function draw() {
