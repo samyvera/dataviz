@@ -38,10 +38,10 @@ function draw() {
 
 	cOffset += 5;
 
-	if (!(i%60)) points = points.map(obj => ({x:Math.random() * innerWidth, y:Math.random() * innerHeight}));
+	points = points.map(obj => ({x:obj.x + Math.random() * 10 - 5, y:obj.y + Math.random() * 10 - 5}));
 	points.forEach(({x, y}) => {
-		fill(360 * Math.random(), 100, (50 + 25 * Math.random()));
-		const azaza = i % 60;
+		stroke(360 * Math.random(), 100, (50 + 25 * Math.random()));
+		const azaza = Math.cos((i%60) / 10) * 50;
 		rect(x-azaza /2, y - azaza/2, azaza, azaza);
 	})
 
